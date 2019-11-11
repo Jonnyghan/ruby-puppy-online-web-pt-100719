@@ -3,6 +3,7 @@ require 'pry'
 class Dog 
   @@all = []
   attr_accessor :name
+  
   def self.save
       @@all << self
     end
