@@ -8,9 +8,9 @@ class Dog
     @name = name
     self.save
     #binding.pry
-  end
   def self.save
       @@all << self
+  end
   end
   
   
