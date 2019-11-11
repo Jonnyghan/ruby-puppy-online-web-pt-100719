@@ -5,15 +5,10 @@ class Dog
   
   @@all = []
   
-  
-  def initialize(name)
-    @name = name
-    def self.save
+  def self.save
       @@all << self
     end
-    self.save
-    #binding.pry
-  end
+  
   
   def self.all
     @@all
@@ -30,6 +25,12 @@ class Dog
     @@all.clear
   end
   
+  def initialize(name)
+    @name = name
+    
+    self.save
+    #binding.pry
+  end
   
   
 end 
