@@ -1,8 +1,9 @@
 require 'pry'
 # Add your code here
 class Dog 
-  @@all = []
   attr_accessor :name
+  
+  @@all = []
   
   def self.save
       @@all << self
