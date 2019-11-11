@@ -5,11 +5,12 @@ class Dog
   
   @@all = []
   
-  def self.save
-      @@all << self
-    end
+  
   def initialize(name)
     @name = name
+    def self.save
+      @@all << self
+    end
     #self.save
     #binding.pry
   end
@@ -21,8 +22,8 @@ class Dog
   def self.print_all
     @@all.each do 
       |x| puts x.name
-  end 
-end
+    end 
+  end
   
     
   def self.clear_all
