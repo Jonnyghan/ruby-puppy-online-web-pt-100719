@@ -4,10 +4,14 @@ class Dog
   attr_accessor :name
   
   @@all = []
-  
+  def initialize(name)
+    @name = name
+    self.save
+    #binding.pry
+  end
   def self.save
       @@all << self
-    end
+  end
   
   
   def self.all
@@ -25,12 +29,8 @@ class Dog
     @@all.clear
   end
   
-  def initialize(name)
-    @name = name
+  
     
-    self.save
-    #binding.pry
-  end
   
   
 end 
