@@ -6,11 +6,11 @@ class Dog
   @@all = []
   def initialize(name)
     @name = name
-    self.save
     #binding.pry
   def self.save
       @@all << self
   end
+    self.save
   end
   
   
